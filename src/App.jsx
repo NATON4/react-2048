@@ -7,12 +7,10 @@ function App() {
     const [boardData, setBoardData] = useState([]);
 
     const handleSizeChange = (event) => {
-        let newSize = parseInt(event.target.value, 10);
+        let newSize = parseInt(event.target.value);
 
-        newSize = Math.max(newSize, 0);
-
-        newSize = Math.min(newSize, 20);
-
+        newSize = Math.min(20, newSize);
+        newSize = Math.max(2, newSize);
         setBoardSize(newSize);
         generateBoardData(newSize);
     };

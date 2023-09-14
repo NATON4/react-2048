@@ -31,8 +31,10 @@
 
 .cell-0 {
   background-color: #ccc;
+  transition: grid-area 0.5s ease;
 }
 
 .cell-2 {
   background-color: grey;
+  transition: grid-area 0.5s ease;
 }
